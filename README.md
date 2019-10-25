@@ -16,8 +16,8 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 ## Links (Add your links)
 
-* Code: `<insert Github repository link here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Code: https://github.com/Go-Lyrics/SetMate
+* Trello/Github Project Kanban: https://trello.com/b/ICehQPb8/setmate
 * Test Flight: `<insert beta signup link here>`
 * YouTube demo video: `<insert video url here>`
 
@@ -25,27 +25,35 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    Marlon: PDFViewer & documentPicker, new and challenging
+    Jeff: working with splitViews & the fetchedResultsController
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    Marlon: Working with splitViews, sending info from the master to detailed. Delegates/Protocols helped
+    Jeff: same
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    Marlon: 
+    Jeff: Used it to make the link between splitViews all over the app
+        private func prepareDelegate() {
+            let splitViewController = self.splitViewController
+            let detailsVC = (splitViewController?.viewControllers.last as? UINavigationController)?.topViewController as? SetListDetailsVC
+            delegate = detailsVC
+        }
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
-
-    `<Your answer here>`
+    
+    For live musicians, setMate is your digital binder for storing all your music sheets and lyrics to be organized for live performances
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    PDFViewer
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    Release on the iPad store as a paid app, introduce iCloud, add filters for sets/songs, etc.....
 
 ## Required Slides (Add your Keynote to your PR)
 
